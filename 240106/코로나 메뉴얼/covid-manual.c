@@ -5,11 +5,9 @@ int main() {
     char s1,s2,s3;
     int temp1, temp2, temp3;
 
-    scanf("%c %d", &s1, &temp1);
-    getchar();
-    scanf("%c %d", &s2, &temp2);
-    getchar();
-    scanf("%c %d", &s3, &temp3);
+    scanf(" %c %d", &s1, &temp1);
+    scanf(" %c %d", &s2, &temp2);
+    scanf(" %c %d", &s3, &temp3);
 
 
     int check = 0;
