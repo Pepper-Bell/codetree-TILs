@@ -8,8 +8,10 @@ int main() {
     if(year%4==0){
         if(year%100==0 && year%400!=0){
             printf("false");
+        }else{
+            printf("true");
+
         }
-        printf("true");
     }else{
         printf("false");
     }
