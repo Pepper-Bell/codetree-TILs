@@ -8,7 +8,7 @@ int main() {
 
     printf("%d.", a/b);
 
-    parent = a;
+    parent = a%b;
     child = b;
     left = parent;
     
