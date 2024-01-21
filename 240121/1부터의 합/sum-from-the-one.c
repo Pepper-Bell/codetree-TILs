@@ -6,12 +6,11 @@ int main() {
     scanf("%d", &n);
 
     for(int i=1; i<=n; i++){
-        if(sum+i>=n){
-            if(sum+i==n){
-                printf("%d", n);
-                break;
-            }
+        if(sum+i>n){
             printf("%d", sum);
+            break;
+        }else if(sum+i==n){
+            printf("%d", sum+i);
             break;
         }
         sum+=i;
