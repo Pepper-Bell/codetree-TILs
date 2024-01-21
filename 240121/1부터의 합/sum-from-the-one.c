@@ -9,6 +9,7 @@ int main() {
         sum += i;
         if(sum>=n){
             printf("%d", i);
+            break;
         }
     }
     return 0;
