@@ -5,15 +5,18 @@ int main() {
     int n, sum=0;
     scanf("%d", &n);
 
-    for(int i=1; i<=n; i++){
+    for(int i=1; i<=100; i++){
         if(sum+i>n){
             printf("%d", sum);
             break;
         }else if(sum+i==n){
             printf("%d", sum+i);
             break;
+        }else if(sum>=100){
+            printf("100");
+            break;
         }
-        sum+=i;
+        sum += i;
     }
     return 0;
 }
