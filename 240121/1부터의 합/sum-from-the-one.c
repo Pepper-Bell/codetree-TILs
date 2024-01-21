@@ -10,7 +10,7 @@ int main() {
             printf("%d", sum);
             break;
         }else if(sum+i==n){
-            printf("%d", sum+i);
+            printf("%d", sum);
             break;
         }
         sum+=i;
