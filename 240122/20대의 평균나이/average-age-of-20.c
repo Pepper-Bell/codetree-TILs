@@ -6,7 +6,7 @@ int main() {
     float sum=0;
     while(1){
         scanf(" %d", &n);
-        if(n<30 || n<20){
+        if(n<30 && n>=20){
             cnt++;
             sum+=n;
         }else{
