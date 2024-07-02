@@ -19,6 +19,7 @@ int main() {
         }
 
         printf("%d\n", cnt);
+        cnt = 0;
     }
     return 0;
 }
