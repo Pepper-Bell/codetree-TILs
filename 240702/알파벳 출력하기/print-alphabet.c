@@ -11,6 +11,9 @@ int main() {
         for(int j=0; j<i+1; j++){
             printf("%c", cnt);
             cnt++;
+            if(cnt>65+25){
+                cnt=65;
+            }
         }
         printf("\n");
     }
