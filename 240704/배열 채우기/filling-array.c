@@ -10,6 +10,8 @@ int main() {
         if(arr[i]==0){
             check = i-1;
             break;
+        }else if(i==9){
+            check = 9;
         }
     }
 
