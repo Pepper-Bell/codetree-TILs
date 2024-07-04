@@ -12,6 +12,6 @@ int main() {
             check ++;
         }
     }
-    printf("%d %.1f", sum, (double)sum/check);
+    printf("%d %.1lf", sum, (double)sum/check);
     return 0;
 }
