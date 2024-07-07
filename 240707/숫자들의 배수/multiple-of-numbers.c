@@ -6,12 +6,11 @@ int main() {
     scanf("%d ", &n);
 
     while(cnt!=2){
-        printf("%d ", n*i);
-        i++;
         if(n*i%5==0){
             cnt++;
         }
+        printf("%d ", n*i);
+        i++;
     }
-    printf("%d", n*i);
     return 0;
 }
