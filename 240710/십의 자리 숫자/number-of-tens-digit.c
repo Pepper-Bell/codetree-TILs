@@ -5,6 +5,7 @@ int main() {
     int input, arr[9] = {0, };
     for(int i=0; i<100; i++){
         scanf("%d ", &input);
+        if(input==0){break;}
         for(int j=0; j<9; j++){
             if(input/10 == j+1){
                 arr[j]++;
