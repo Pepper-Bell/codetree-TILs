@@ -22,9 +22,9 @@ int main() {
             if(cnt==n2){
                 printf("Yes");
                 return 0;
-            }else{
-                cnt=0;
             }
+        }else{
+            cnt = 0;
         }
     }
 
