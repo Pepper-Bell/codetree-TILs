@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main() {
 
-    int n, min=100, cnt=0;
+    int n, min=INT_MAX, cnt=0;
     scanf("%d", &n);
     int arr[n];
 
