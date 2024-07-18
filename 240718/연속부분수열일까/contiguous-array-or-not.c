@@ -21,14 +21,14 @@ int main() {
             cnt++;
             if(cnt==n2){
                 printf("Yes");
-                break;
+                return 0;
+            }else{
+                cnt=0;
             }
         }
-        if(arr[n1-1]){
-            printf("No");
-            break;
-        }
     }
+
+    printf("No");
 
     return 0;
 }
