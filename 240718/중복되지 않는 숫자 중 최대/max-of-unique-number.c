@@ -3,21 +3,27 @@
 
 int main() {
     
-    int n, cnt=0, max=INT_MIN;
+    int n, max=INT_MIN;
     scanf("%d", &n);
     int arr[n];
+    int check[1000] = {0, };
 
     for(int i=0; i<n; i++){
         scanf("%d ", &arr[i]);
-        if(arr[i]>max) max = arr[i]; cnt = 0;
-        if(arr[i]==max) cnt++;
+        if(arr[i]>max){
+            max = arr[i];
+        }
+        check[arr[i]]++;
     }
 
-    if(cnt==0){
-        printf("%d", max);
-    }else{
-        printf("-1");
+    for(int i=max; i>=0; i--){
+        if(check[i]==1){
+            printf("%d", i);
+            return 0;
+        }
     }
+
+    printf("-1");
 
     return 0;
 }
