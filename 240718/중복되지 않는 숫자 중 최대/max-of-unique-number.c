@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main() {
+    
+    int n, cnt=0, max=INT_MIN;
+    scanf("%d", &n);
+    int arr[n];
+
+    for(int i=0; i<n; i++){
+        scanf("%d ", &arr[i]);
+        if(arr[i]>max) max = arr[i]; cnt = 0;
+        if(arr[i]==max) cnt++;
+    }
+
+    if(cnt==0){
+        printf("%d", max);
+    }else{
+        printf("-1");
+    }
+
+    return 0;
+}
