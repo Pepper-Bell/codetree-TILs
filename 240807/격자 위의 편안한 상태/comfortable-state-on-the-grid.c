@@ -4,7 +4,7 @@
 int check(int a, int b);
 bool range(int a, int b);
 
-static int arr[102][102]={0, };
+static int arr[100][100]={0, };
 static int n,m;
 
 int main() {
