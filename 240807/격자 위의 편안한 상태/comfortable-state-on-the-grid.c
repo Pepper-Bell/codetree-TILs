@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 int check(int a, int b);
-bool inrange(int a, int b);
+bool range(int a, int b);
 
 static int arr[102][102]={0, };
 static int n,m;
@@ -20,7 +20,7 @@ int main() {
     return 0;
 }
 
-bool inrange(int a, int b){
+bool range(int a, int b){
     return 0 <= a && a < n && 0 <= b && b < n;
 }
 
@@ -31,12 +31,12 @@ int check(int a, int b){
     int db[4]={0, 0, -1, 1};
     arr[a][b] = 1;
     for(int i=0; i<4; i++){
-        if(inrange(a+da[i],b+db[i]) && arr[a+da[i]][b+db[i]]==1){
+        if(range(a+da[i],b+db[i]) && arr[a+da[i]][b+db[i]]==1){
             sat++;
         }
     }
     
-    if(sat>=3){
+    if(sat==3){
         return 1;
     }else{
         return 0;
