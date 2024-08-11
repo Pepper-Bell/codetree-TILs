@@ -7,31 +7,16 @@ int main() {
     scanf("%s", a);
     scanf("%s", b);
 
-    for(int i=0; a[i]!='\0'; i++){
-        ab[i]=a[i];
-    }
-    
-    for(int i=0; b[i]!='\0'; i++){
-        ab[strlen(a)+i]=b[i];
-        ba[i]=b[i];
-    }
-    ab[strlen(ab)]='\0';
+    strcat(ab, a);
+    strcat(ab, b);
+    strcat(ba, b);
+    strcat(ba, a);
 
-    for(int i=0; a[i]!='\0'; i++){
-        ba[strlen(b)+i]=a[i];
+    if(strcmp(ab, ba)==0){
+        printf("true");
+    }else{
+        printf("false");
     }
-    ba[strlen(ba)]='\0';
 
-    len = strlen(ab);
-
-    for(int i=0; i<len; i++){
-        if(ab[i]!=ba[i]){
-            printf("false");
-            break;
-        }
-        if(i==len-1){
-            printf("true");
-        }
-    }
     return 0;
 }
