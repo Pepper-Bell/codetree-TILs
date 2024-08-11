@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char a[100], b[100], ab[200], ba[200];
+    char a[101], b[101], ab[201], ba[201];
     int len;
     scanf("%s", a);
     scanf("%s", b);
@@ -15,10 +15,12 @@ int main() {
         ab[strlen(a)+i]=b[i];
         ba[i]=b[i];
     }
+    ab[strlen(ab)]='\0';
 
     for(int i=0; a[i]!='\0'; i++){
         ba[strlen(b)+i]=a[i];
     }
+    ba[strlen(ba)]='\0';
 
     len = strlen(ab);
 
