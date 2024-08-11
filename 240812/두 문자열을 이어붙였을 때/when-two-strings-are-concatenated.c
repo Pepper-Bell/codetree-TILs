@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char a[101], b[101], ab[201], ba[201];
+    char a[101], b[101], ab[202], ba[202];
     int len;
     scanf("%s", a);
     scanf("%s", b);
