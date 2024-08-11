@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char str[50];
+    char str[30];
     char hi[]={"Hello"};
 
     scanf("%s", str);
@@ -12,6 +12,7 @@ int main() {
         str[len] = hi[i];
         len++;
     }
+    str[len] = '\0';
 
     printf("%s", str);
     return 0;
