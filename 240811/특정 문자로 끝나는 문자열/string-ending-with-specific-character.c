@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char str[10][20];
+    char str[10][21];
     char n;
     int cnt=0;
     for(int i=0; i<10; i++){
