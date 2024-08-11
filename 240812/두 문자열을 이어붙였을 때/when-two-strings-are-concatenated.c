@@ -24,14 +24,10 @@ int main() {
 
     len = strlen(ab);
 
-    for(int i=0; i<len; i++){
-        if(ab[i]!=ba[i]){
-            printf("false");
-            break;
-        }
-        if(i==len-1){
-            printf("true");
-        }
+    if(strcmp(ab,ba)==0){
+        printf("true");
+    }else{
+        printf("false");
     }
     return 0;
 }
