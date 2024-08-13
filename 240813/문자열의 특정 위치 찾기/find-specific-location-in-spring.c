@@ -13,7 +13,7 @@ int main() {
         }
     }
 
-    if(index>0){
+    if(index>=0){
         printf("%d", index);
     }else{
         printf("No");
