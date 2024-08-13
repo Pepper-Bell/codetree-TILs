@@ -12,25 +12,22 @@ int main() {
 
     for(int i=0; i<arrlen; i++){
         for(int j=0; j<tarlen; j++){
-            if(index == tarlen){
-                cnt++;
-                //printf("cnt up \n");
-                index = 0;
+            if(cnt==tarlen){
+                break;
             }
             if(arr[i+j]==target[j]){
-                //printf("index up\n");
-                index++;
+                index=i;
+                cnt++;
             }else{
-                index = 0;
+                index = -1;
                 break;
             }
         }
+        if(cnt==tarlen){
+            break;
+        }
     }
 
-    if(cnt>0){
-        printf("%d", cnt);
-    }else{
-        printf("-1");
-    }
+    printf("%d", index);
     return 0;
 }
