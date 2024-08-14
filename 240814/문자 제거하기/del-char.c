@@ -9,7 +9,7 @@ int main() {
 
     while(len != 1){
         scanf("%d", &n);
-        if(n>len){
+        if(n>=len){
             arr[len-1] = '\0';
         }else{
             for(int i=n; i<len; i++){
