@@ -5,7 +5,7 @@ int main() {
     char arr[101];
     scanf("%s", arr);
 
-    for(int i=2; i<strlen(arr)-2; i++){
+    for(int i=1; i<strlen(arr)-2; i++){
         arr[i]=arr[i+1];
     }
     arr[strlen(arr)-3] = arr[strlen(arr)-1];
