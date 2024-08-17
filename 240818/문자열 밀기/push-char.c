@@ -4,14 +4,14 @@
 int main() {
     char tmp, str[21];
     scanf("%s", str);
+    int index = strlen(str)-1;
 
-    for(int i=0; i<strlen(str); i++){
-        if(i==0){
-            tmp = str[i];
-        }
+    tmp = str[0];
+
+    for(int i=0; i<index; i++){
         str[i]=str[i+1];
     }
-    str[strlen(str)]=tmp;
+    str[index]=tmp;
     printf("%s", str);
     return 0;
 }
