@@ -33,8 +33,9 @@ int main() {
             break;
         }
     }
+    int r2=atoi(change2);
 
-    printf("%d", atoi(change1)+atoi(change2));
+    printf("%d",  atoi(change1)+atoi(change2));
 
     return 0;
 }
