@@ -21,7 +21,11 @@ int main() {
         cnt++;
     }
 
-    printf("%d", cnt);
+    if(cnt==len){
+        printf("-1");
+    }else{
+        printf("%d", cnt);
+    }
 
     return 0;
 }
