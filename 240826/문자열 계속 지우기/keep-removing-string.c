@@ -31,10 +31,27 @@ int main() {
         }
     }
 
-    if(strcmp(A, B)==0){
-    }else{
-        printf("%s", A);
+    for(int i=0; i<alen; i++){
+        for(int j=0; j<blen; j++){
+            if(A[i+j]==B[j]){
+                cnt++;
+            }else{
+                cnt=0;
+                break;
+            }
+            if(cnt==blen){
+                for(int k=i; k<alen-blen; k++){
+                    A[k] = A[k+blen];
+                }
+                A[alen-blen]='\0';
+                alen = strlen(A);
+                cnt=0;
+                i=0;
+            }
+        }
     }
+
+    printf("%s", A);
 
     return 0;
 }
